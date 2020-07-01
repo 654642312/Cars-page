@@ -191,3 +191,22 @@ header{
     height: 100%;
     vertical-align: top;
 }
+
+.footer {
+    background: #434B4D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    margin-top: 10rem;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0 1rem;
+    width: 80%;
+}
+
+.list-item-link {
+    text-decoration: none;
+    color: var(--white);
+}
