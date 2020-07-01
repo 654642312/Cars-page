@@ -26,7 +26,7 @@ header{
 
 .container {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .container-logo {
@@ -78,11 +78,11 @@ header{
 
 .container-title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .container-description {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .container-button {
@@ -93,9 +93,101 @@ header{
     font-size: 1.5rem;
     padding: 1rem;
     transition: .3s ease all;
+    cursor: pointer;
 }
 
 .container-button:hover {
     background: var(--white);
     color: var(--black);
+}
+
+/*CAROUSEL*/
+
+.recommended-cars {
+    margin-bottom: 4.3rem;
+}
+
+.title-controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.indicators button {
+    background: var(--white);
+    height: 0.4rem;
+    width: 0.8rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 0.4rem;
+}
+
+.indicators-button:hover,
+.indicators-button.active {
+    background: var(--red);
+}
+
+.container-buttons-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.arrow-right,
+.arrow-left {
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0, .3);
+    font-size: 2.5rem;
+    height: 50%;
+    top: calc(50% -25%);
+    line-height: 2.5rem;
+    width: 3rem;
+    color: var(--white);
+    z-index: 500;
+    transition: .2s ease all;
+    cursor: pointer;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    background: rgba(0,0,0, .9);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.container-carousel {
+    width: 100%;
+    padding: 1.5rem 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container-img-cars {
+    min-width: 25%;
+    height: 250px;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.container-img-cars.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.img-car {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
 }
